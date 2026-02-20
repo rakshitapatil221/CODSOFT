@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e40af;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        section {
+            background: white;
+            margin: 20px auto;
+            padding: 30px;
+            max-width: 900px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #1e40af;
+            border-bottom: 2px solid #1e40af;
+            padding-bottom: 5px;
+        }
+
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+            display: block;
+            margin: 15px auto;
+        }
+
+        .skills ul {
+            list-style: square;
+        }
+
+        .projects img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        .resume a, button {
+            background-color: #1e40af;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 6px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0f172a;
+        }
+
+        footer {
+            background-color: #1e40af;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>Rakshita Patil</h1>
+    <p>Student | Web Developer | Learner</p>
+    <button onclick="showMessage()">Click Me</button>
+</header>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Me</h2>
+    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde" alt="Profile Image">
+    <p>
+        I am a beginner web developer learning HTML, CSS, and JavaScript.
+        I enjoy building simple and interactive web pages.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+    </ul>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects">
+    <h2>Projects</h2>
+
+    <h3>Portfolio Website</h3>
+    <p>A personal portfolio created using HTML, CSS, and JavaScript.</p>
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Project 1">
+
+    <h3>Landing Page</h3>
+    <p>A responsive landing page design.</p>
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Project 2">
+</section>
+
+<!-- RESUME -->
+<section class="resume">
+    <h2>Resume</h2>
+    <a href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf" target="_blank">
+        Download Resume (PDF)
+    </a>
+</section>
+
+<!-- CONTACT -->
+<section class="contact">
+    <h2>Contact</h2>
+    <p>Email: rak@email.com</p>
+    <p>Phone: +91 9800008910</p>
+
+    <button onclick="contactAlert()">Contact Me</button>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Rakshita Patil | All Rights Reserved</p>
+</footer>
+
+<!-- JAVASCRIPT -->
+<script>
+    function showMessage() {
+        alert("Welcome to my portfolio!");
+    }
+
+    function contactAlert() {
+        alert("Thank you for reaching out! I will contact you soon.");
+    }
+</script>
+
+</body>
+</html>
